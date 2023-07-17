@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem 4</title>
+    
+    <style>
+        body{
+            width: 80%;
+            margin: auto;
+        }
+        .main{
+            margin: auto;
+        }
+        
+        .navbar{
+            background-color: rgb(233, 199, 106);
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        .navbar ul{
+            padding: 0 50px 0 0;
+        }
+        .navbar li{
+            display: inline-block;
+        }
+        .navbar h3{
+            margin-right: auto;
+            padding: 0 0 0 30px;
+            font-weight: 500;
+        }
+        .navbar a{
+            text-decoration: none;
+            padding: 7px;
+            color: black;
+        }
+        .about{
+            display:flex;
+            justify-content: space-between;
+        }
+        .about .product{
+            display: grid;
+            place-items: start;
+            float: left;
+            align-content: center;
+            transform: translateX(25px);
+        }
+        .about .img{
+            float: right;
+            transform: translateX(20px);
+        }
+        .about .product .btn1{
+            width: 180px;
+            height: 40px;
+            border-radius: 25px;
+            background-color: rgb(233, 199, 106);
+            color: white;
+            border: none;
+        }
+        .store {
+            width: 100%;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(233, 199, 106);
+        }
+        .store h3, .store p, .store .btn{
+            text-align: center;
+        }
+        
+        
+        .btn {
+            margin: auto;
+        }
+        .btn img{
+            width: 300px;
+            height: 50px;
+        }
+        .container{
+            width: 100%;
+            height: 400px;
+        }
+        .container .logo img{
+            width: 400px;
+            float: left;
+        }
+
+        .container .grid_container{
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-gap: 10px;
+            /* background-color: red; */
+        }
+        .container .grid_container #id1 img{
+            width: 30px;
+            
+        }
+        .container .grid_container img{
+            padding-bottom: 3px;
+        }
+        .container .grid_container p{
+            font-size: 14px;
+            padding-top: 5px;
+        }
+
+        .container .grid_container .grid-item{
+            /* background-color: yellow; */
+            /* border: 1px solid black; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 70px;
+            margin-right: 40px;
+        }
+
+        .grid-item img, .grid-item h4, .grid-item p{
+            text-align: center;
+            margin: 0 !important;
+            
+        }
+        .media{
+            width: 100%;
+            height: 150px;
+            background-color: rgb(233, 199, 106);
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .media h2{
+            font-size: 20px;
+            align-items: center;
+        }
+        .media #img1{
+            padding-right: 25px;
+        }
+        .media #img3{
+            padding-left: 25px;
+        }
+
+        .media img{
+            width: 40px;
+            height: 40px;
+        }
+
+        footer{
+            width: 100%;
+            height: 100px;
+            background-color: black;
+            color: grey;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .link a{
+            padding: 5px;
+            color: grey;
+        }
+    </style>
+</head>
+
+
+<body>
+    
+    <nav class="navbar">
+        <h3>New Mobile Launch</h3>
+        <ul>
+            <li><a href="#">Purchase</a></li>
+            <li><a href="#">Feature</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="about">
+        <div class="product">
+            <h1>Pretty much everything you want in a <br> new phone. <br> No. 1 selling Smartphone</h1> 
+            <button class="btn1">Buy Now for Lowest Price!</button>
+        </div>
+        <div class="img">
+            <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-13-pro-max-blue-select?wid=470&hei=556&fmt=jpeg&qlt=95&.v=1631652955000" alt="iPhone">
+        </div>
+    </div>
+    
+    <div class="store">
+        <div class="apps"> 
+            <h3>Download our VR store app to experience the phone.</h3>
+            <p>Our store's official app is available on any mobile device! Download now to get started!</p>
+            <div class="btn">
+                <a href="#"> <img src="https://www.freepnglogos.com/uploads/app-store-logo-png/google-play-and-apple-app-store-logos-22.png" alt="gplaystore"></a>
+                <!-- <button class="gPlay">App Store</button> -->
+            </div>
+        </div>
+        
+    </div>
+
+
+    <div class="container">
+        <div class="logo">
+            <img src="https://cdn.shopify.com/s/files/1/0262/8812/8086/products/iPhone-13-Pro-Max-Glass---Front_960x.jpg?v=1631641068" alt="iphone image">
+        </div>
+        <div class="grid_container">
+            <div class="grid-item" id="id1">
+                <img src="https://img.icons8.com/ios-filled/50/000000/camera--v1.png"/ alt="camera">
+                <h4>Best in Class Camera</h4>
+                <p>Night vision, tons of filters and pictures.</p>
+            </div>
+            <div class="grid-item" id="id1">
+                <img src="https://img.icons8.com/ios-filled/50/000000/processor.png"/ alt="processor">
+                <h4>Latest Processor</h4>
+                <p>Latest processor to meet your heavy usage!</p>
+            </div>
+            <div class="grid-item">
+                <img src="https://img.icons8.com/ios-glyphs/30/000000/iphone.png"/ alt="display">
+                <h4>Stunning Display</h4>
+                <p>Display with latest technology!</p>
+            </div>
+            <div class="grid-item">
+                <img src="https://img.icons8.com/ios-glyphs/30/000000/full-battery.png"/ alt="battery">
+                <h4>Fast Charge</h4>
+                <p>Charge faster in lesser time!</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="media">
+        <h2>Follow us on</h2>
+        <div class="icon">
+            <img id="img1" src="./twitter.png"/ alt="twitter">
+            <img src="./facebook.png"/ alt="facebook">
+            <img id="img3" src="./youtube.png"/ alt="youtube">
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; Your website 2021. All rights Reserved.</p>
+        <div class="link">
+            <a href="#" >Privacy</a>
+            <a href="#" >Terms</a>
+            <a href="#" >FAQ</a>
+        </div>
+    </footer>
+</body>
+</html>
