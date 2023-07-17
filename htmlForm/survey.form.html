@@ -1,0 +1,195 @@
+<link rel="stylesheet" href="style.css"/>
+<body>
+    <form action="/">
+        <div>
+        <h2 align="center"><ins>A Sample Form Legend</ins></h2>
+        <table>
+            <tr>
+                <td><label for="name">Name: </label></td>
+                <td><input type="text" value="Name" name="Name" placeholder="Name"/></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email: </label></td>
+                <td><input type="email" value="Email" name="Email" placeholder=""/></td>
+            </tr>
+            <tr>
+                <td><label>Button: </label></dt>
+                <td><input type="button" value="Button" name="button" /></td>
+            </tr>
+            <tr>
+                <td><label>Single Checkbox:</label></td> 
+                <td><input type="checkbox" value="checkbox1" name="button" /></td>
+            </tr>
+            <tr>
+                <td>
+                    <fieldset>
+                    <legend>Group of Checkboxes: </legend>
+                    <label>Checkbox 1:
+                    <input type="checkbox" value="checkbox1" name="checkgroup[]" /></label>
+                    <label>Checkbox 2:
+                    <input type="checkbox" value="checkbox2" name="checkgroup[]" /></label> 
+                    <label>Checkbox 3:
+                    <input type="checkbox" value="checkbox3" name="checkgroup[]" /></label> 
+                    <label>Checkbox 4:
+                    <input type="checkbox" value="checkbox4" name="checkgroup[]" /></label> 
+                    </fieldset>
+                </td>
+            </tr>    
+            <tr>
+                <td><label>Color: </label></td>
+                <td><input type="color" value="color" name="color" /></td>
+            </tr>
+            <tr>
+                <td><label>Date: </label></td>
+                <td><input type="date" value="date" name="date" /></td>
+            </tr>
+            <tr>
+                <td><label>Date, Time (Local): </label></td>
+                <td><input type="datetime-local" value="datetime" name="datetime" /></td>
+            </tr>
+            <tr>
+                <td><label>File: </label></td>
+                <td><input type="file" value="file" name="file" /></td>
+            </tr>
+            <tr><td><input type="hidden" value="hidden" name="hidden" /></td></tr>
+            <tr>
+            <td><label>Image: </label></td>
+            <td><input type="image" value="image" name="image" /></td>
+            </tr>
+            <tr>
+                <td><label>Month: </label></td>
+                <td><input type="month" value="month" name="month" /></td>
+            </tr>
+            <tr>
+                <td><label>Number: </label></td>
+                <td><input type="number" value="number" name="number" /></td>
+            </tr>
+            <tr>
+                <td><label>Password: </label></td>
+                <td><input type="password" value="password" name="password" /></td>
+            </tr>
+            <tr>
+                <td><label>Single Radio:</label></td> 
+                <td><input type="radio" value="radio" name="radio" /></td>
+            </tr>
+            <tr>
+                <td><fieldset>
+            <legend>Group of Radios: </legend>
+            <label>Radio 1: 
+                <input type="radio" value="radio1" name="radiogroup" /></label>
+            <label>Radio 2: 
+                <input type="radio" value="radio2" name="radiogroup" /></label>
+            <label>Radio 3: 
+                <input type="radio" value="radio3" name="radiogroup" /></label>
+            <label>Radio 4: 
+                <input type="radio" value="radio4" name="radiogroup" /></label>
+            </fieldset></td>
+            </tr>
+            <tr>
+                <td><label>Range: </label></td>
+                <td><input type="range" value="range" name="range" /></td>
+            </tr>
+            <tr>
+                <td><label>Reset: </label></td>
+                <td><input type="reset" value="reset" name="reset" /></td>
+            </tr>
+            <tr>
+                <td><label>Time: </label></td>
+                <td><input type="time" value="time" name="time" /></td>
+            </tr>
+            <tr>
+                <td><label>Search: </label></td>
+                <td><input type="search" value="search" name="search" /></td>
+            </tr>
+            <tr>
+                <td><label>Tel: </label></td>
+                <td><input type="tel" value="tel" name="tel" /></td>
+            </tr>
+            <tr>
+                <td><label>Text: </label></td>
+                <td><input type="text" value="text" name="text" /></td>
+            </tr>
+            <tr>
+                <td><label>URL: </label></td>
+                <td><input type="url" value="url" name="url" /></td>
+            </tr>
+            <tr>
+                <td><label>Week: </label></td>
+                <td><input type="week" value="week" name="week" /></td>
+            </tr>
+            <tr><td><button>This is a button!</button></td></tr>
+
+            <tr>
+                <td><label>Select 1: </label></td>
+                <td>
+                    <select name="select" size="1">
+                    <option>Test</option>
+                    <option>Test</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Select 2: </label></td>
+                <td>
+                    <select name="select1" size="3">
+                    <option>Test</option>
+                    <option>Test</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Select Multiple: </label></td>
+                <td><select name="select2" size="3" multiple>
+                    <option>Test</option>
+                    <option>Test</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Select Groups: </label></td>
+                <td>
+                    <select name="select3" size="2" multiple>
+                    <optgroup label="First Group">
+                    <option>Test</option>
+                    <option>Test</option>
+                    </optgroup>
+                    <optgroup label="Second Group">
+                    <option>Test</option>
+                    <option>Test</option>
+                    </optgroup>
+                    <optgroup label="Third Group">
+                    <option>Test</option>
+                    <option>Test</option>
+                    </optgroup>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><fieldset>
+                        <legend>Datalist: </legend>
+                        <input type="text" name="datalist" list="samplelist">
+                        <datalist id="samplelist">
+                            <option>Something</option>
+                            <option>Something else</option>
+                            <option>Another thing</option>
+                        </datalist>
+                    </fieldset>
+                </td>
+            </tr>
+            <tr>
+                <td><label>A textarea!</label></td>
+                <td><textarea name="textarea">A paragraph in here</textarea></td>
+            </tr>
+            <tr>
+                <td><label>Progress (very unsupported): </label></td>
+                <td><progress value="20" max="100"></progress></td>
+            </tr>
+            <tr>
+                <td><label>Meter (very unsupported): </label></td>
+                <td><meter min="0" value="20" max="100" low="10" high="90" optimum="80">20 in the meter</meter></td>
+            </tr>
+            <tr><td><input type="submit" value="GO" /></td></tr>
+        </table>
+        </div>
+    </form> 
+</body>
